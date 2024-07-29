@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookMyTableApp.Core\BookMyTableApp.Core.csproj" />
+    <ProjectReference Include="..\BookMyTableApp.Data\BookMyTableApp.Data.csproj" />
+  </ItemGroup>
+
+</Project>
