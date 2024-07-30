@@ -1,5 +1,6 @@
 
 using BookMyTableApp.Data;
+using BookMyTableApp.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookMyTableApp.API;
@@ -12,6 +13,10 @@ public class Program
         builder.AddServiceDefaults();
         var configuration = builder.Configuration;
         // Add services to the container.
+
+        builder.Services.AddScoped<IRestaurantRepository, RestaurantRepository>();
+        builder.Services.AddScoped<IRestaurantService, RestaurantService>();
+
         builder.Services.AddDbContext<BookMyTableDbContext>(options =>
         options.UseSqlServer(configuration.GetConnectionString("DbContext") ?? "")
         .EnableSensitiveDataLogging()  //<--Do not use this in production, only for dev purpose
