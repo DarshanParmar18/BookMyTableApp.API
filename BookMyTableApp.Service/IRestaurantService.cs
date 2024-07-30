@@ -10,5 +10,11 @@ namespace BookMyTableApp.Service
     public interface IRestaurantService
     {
         Task<List<RestaurantModel>> GetAllRestaurantsAsync();
+
+        Task<IEnumerable<RestaurantBranchModel>> GetRestaurantBranchesByRestaurantIdAsync(int restaurantId);
+
+        Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId, DateTime date);
+
+        Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId);
     }
 }
