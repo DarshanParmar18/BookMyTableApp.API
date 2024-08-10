@@ -27,15 +27,17 @@ namespace BookMyTableApp.Service
             return await _restaurantRepository.GetRestaurantBranchesByRestaurantIdAsync(restaurantId);
         }
 
-        public async Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId, DateTime date)
-        {
-            return await _restaurantRepository.GetDinningTablesByBranchIdAsync(branchId,date);
-        }
-
         public async Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId)
         {
             return await _restaurantRepository.GetDinningTablesByBranchIdAsync(branchId);
         }
+
+        public async Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchAndDateAsync(int branchId, DateTime date)
+        {
+            return await _restaurantRepository.GetDinningTablesByBranchAndDateAsync(branchId,date);
+        }
+
+        
 
     }
 }

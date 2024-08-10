@@ -17,8 +17,9 @@ namespace BookMyTableApp.API.Controllers
             _restaurantService = restaurantService;
         }
 
+
         [HttpGet("restaurants")]
-        [ProducesResponseType(200, Type =typeof(List<RestaurantModel>))]
+        [ProducesResponseType(200, Type = typeof(List<RestaurantModel>))]
         public async Task<ActionResult> GetAllRestaurantsAsync()
         {
             var restaurant = await _restaurantService.GetAllRestaurantsAsync();
@@ -54,9 +55,9 @@ namespace BookMyTableApp.API.Controllers
         [HttpGet("dinningtables/{branchId}/{date}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<DinningTableWithTimeSlotsModel>))]
         [ProducesResponseType(400)]
-        public async Task<ActionResult<IEnumerable<DinningTableWithTimeSlotsModel>>> GetDinningTablesByBranchIdAsync(int branchId, DateTime date)
+        public async Task<ActionResult<IEnumerable<DinningTableWithTimeSlotsModel>>> GetDinningTablesByBranchAndDateAsync(int branchId, DateTime date)
         {
-            var dinningTables = await _restaurantService.GetDinningTablesByBranchIdAsync(branchId,date);
+            var dinningTables = await _restaurantService.GetDinningTablesByBranchAndDateAsync(branchId,date);
             if (dinningTables == null)
             {
                 return NotFound();

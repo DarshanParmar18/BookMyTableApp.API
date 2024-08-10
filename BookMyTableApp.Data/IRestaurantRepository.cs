@@ -13,9 +13,9 @@ namespace BookMyTableApp.Data
 
         Task<IEnumerable<RestaurantBranchModel>> GetRestaurantBranchesByRestaurantIdAsync(int restaurantId);
 
-        Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId, DateTime date);
-
         Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchIdAsync(int branchId);
+
+        Task<IEnumerable<DinningTableWithTimeSlotsModel>> GetDinningTablesByBranchAndDateAsync(int branchId, DateTime date);
 
     }
 }
