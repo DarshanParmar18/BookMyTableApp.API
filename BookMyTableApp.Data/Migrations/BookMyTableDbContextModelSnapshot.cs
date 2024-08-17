@@ -17,7 +17,7 @@ namespace BookMyTableApp.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -44,7 +44,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasIndex(new[] { "RestaurantBranchId" }, "IX_DiningTables_RestaurantBranchId");
 
-                    b.ToTable("DiningTable");
+                    b.ToTable("DiningTables");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.Reservation", b =>
@@ -77,7 +77,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasIndex(new[] { "UserId" }, "IX_Reservations_UserId");
 
-                    b.ToTable("Reservation");
+                    b.ToTable("Reservations");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.Restaurant", b =>
@@ -112,7 +112,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Restaurant");
+                    b.ToTable("Restaurants");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.RestaurantBranch", b =>
@@ -152,7 +152,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasIndex(new[] { "RestaurantId" }, "IX_RestaurantBranches_RestaurantId");
 
-                    b.ToTable("RestaurantBranch");
+                    b.ToTable("RestaurantBranches");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.TimeSlot", b =>
@@ -181,7 +181,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasIndex(new[] { "DiningTableId" }, "IX_TimeSlots_DiningTableId");
 
-                    b.ToTable("TimeSlot");
+                    b.ToTable("TimeSlots");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.User", b =>
@@ -223,7 +223,7 @@ namespace BookMyTableApp.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("BookMyTableApp.Core.ModelTemp.DiningTable", b =>

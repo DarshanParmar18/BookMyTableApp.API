@@ -25,7 +25,7 @@ public partial class Reservation
     [Required]
     public string ReservationStatus { get; set; } = null!;
 
-    public bool ReminderSent { get; set; }
+    public bool? ReminderSent { get; set; } = false;
 
     [ForeignKey("TimeSlotId")]
     [InverseProperty("Reservations")]

@@ -32,8 +32,7 @@ public partial class User
     [Required]
     public DateTime CreatedDate { get; set; }
 
-    [Required]
-    public DateTime UpdatedDate { get; set; }
+    public DateTime? UpdatedDate { get; set; }
 
     [InverseProperty("User")]
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
