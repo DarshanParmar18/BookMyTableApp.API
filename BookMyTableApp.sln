@@ -5,15 +5,15 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.API", "BookMyTableApp.API\BookMyTableApp.API.csproj", "{9D3CBC04-764D-4FDF-982D-425DFFFA6EC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMyTableApp.AppHost", "BookMyTableApp.AppHost\BookMyTableApp.AppHost.csproj", "{A845CA5A-0628-48D7-AB9B-F67379169981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.AppHost", "BookMyTableApp.AppHost\BookMyTableApp.AppHost.csproj", "{A845CA5A-0628-48D7-AB9B-F67379169981}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.ServiceDefaults", "BookMyTableApp.ServiceDefaults\BookMyTableApp.ServiceDefaults.csproj", "{BB26B39F-B978-4739-94A1-9794CA16C474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMyTableApp.Core", "BookMyTableApp.Core\BookMyTableApp.Core.csproj", "{4D6EB254-D2BE-4CA4-8EBC-295C3F99AC51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.Core", "BookMyTableApp.Core\BookMyTableApp.Core.csproj", "{4D6EB254-D2BE-4CA4-8EBC-295C3F99AC51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMyTableApp.Data", "BookMyTableApp.Data\BookMyTableApp.Data.csproj", "{0C6A59C8-A00F-4033-8810-48723E970966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.Data", "BookMyTableApp.Data\BookMyTableApp.Data.csproj", "{0C6A59C8-A00F-4033-8810-48723E970966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMyTableApp.Service", "BookMyTableApp.Service\BookMyTableApp.Service.csproj", "{20F671C5-C668-44DA-82B9-F57204B980EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyTableApp.Service", "BookMyTableApp.Service\BookMyTableApp.Service.csproj", "{20F671C5-C668-44DA-82B9-F57204B980EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
