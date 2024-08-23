@@ -99,6 +99,8 @@ namespace BookMyTableApp.API
 
                 app.MapDefaultEndpoints();
 
+
+                app.UseCors("default");
                 // Configure the HTTP request pipeline.
                 // if (app.Environment.IsDevelopment())
                 {
